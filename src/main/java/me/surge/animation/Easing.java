@@ -22,7 +22,7 @@ public enum Easing {
     /**
      * @see <a href="https://easings.net/#easeOutSine">The easing on easings.net</a>
      */
-    SINE_OUT(in -> Math.sin((in * Math.PI) - 1) / 2),
+    SINE_OUT(in -> Math.sin((in * Math.PI) / 2)),
 
     /**
      * @see <a href="https://easings.net/#easeInOutSine">The easing on easings.net</a>
