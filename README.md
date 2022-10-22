@@ -10,7 +10,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.Wolfsurge:AnimationSystem:1.1'
+    implementation 'com.github.Wolfsurge:JavaAnimationSystem:1.1'
 }
 ```
 
