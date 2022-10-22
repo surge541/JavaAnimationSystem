@@ -146,7 +146,12 @@ public enum Easing {
     /**
      * @see <a href="https://easings.net/#easeOutBack">The easing on easings.net</a>
      */
-    BACK_OUT(in -> 1 + (1.70158 + 1) * Math.pow(in - 1, 3) + 1.70158 * Math.pow(in - 1, 2)),
+    BACK_OUT(in -> {
+        double c1 = 1.70158;
+        double c3 = c1 + 1;
+
+        return 1 + c3 * Math.pow(in - 1, 3) + c1 * Math.pow(in - 1, 2);
+    }),
 
     /**
      * @see <a href="https://easings.net/#easeInOutBack">The easing on easings.net</a>
