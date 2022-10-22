@@ -34,8 +34,6 @@ public class Animation {
         this.initialState = initialState;
         setState(initialState);
         this.easing = easing;
-
-        Easing e = Easing.SINE_IN;
     }
 
     /**
