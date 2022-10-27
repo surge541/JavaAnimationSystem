@@ -40,7 +40,7 @@ public class Main {
         bounded.setState(true);
 
         // Get and print animation factor
-        while (bounded.getAnimationValue() < bounded.maximum) {
+        while (bounded.getAnimationValue() < bounded.getMaximum()) {
             System.out.println(bounded.getAnimationValue());
         }
 

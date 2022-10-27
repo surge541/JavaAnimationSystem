@@ -116,12 +116,7 @@ public class Animation {
      * @return The clamped value.
      */
     private double clamp(double in) {
-        if (in < 0) {
-            return 0;
-        }
-
-        return Math.min(in, 1);
-
+        return in < 0 ? 0 : Math.min(in, 1);
     }
 
 }

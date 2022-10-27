@@ -9,10 +9,10 @@ import java.util.function.Supplier;
 public class BoundedAnimation extends Animation {
 
     // The minimum value of the animation
-    public float minimum;
+    private float minimum;
 
     // The maximum value of the animation
-    public float maximum;
+    private float maximum;
 
     /**
      * Constructor that takes two suppliers
@@ -75,4 +75,35 @@ public class BoundedAnimation extends Animation {
         return minimum + ((maximum - minimum) * getAnimationFactor());
     }
 
+    /**
+     * Gets the minimum value
+     * @return The minimum value
+     */
+    public float getMinimum() {
+        return minimum;
+    }
+
+    /**
+     * Sets the minimum value
+     * @param minimum The minimum value
+     */
+    public void setMinimum(float minimum) {
+        this.minimum = minimum;
+    }
+
+    /**
+     * Gets the maximum value
+     * @return The maximum value
+     */
+    public float getMaximum() {
+        return maximum;
+    }
+
+    /**
+     * Sets the maximum value
+     * @param maximum The maximum value
+     */
+    public void setMaximum(float maximum) {
+        this.maximum = maximum;
+    }
 }
