@@ -102,6 +102,16 @@ public class Animation {
     }
 
     /**
+     * Instantly switches the animation to the given state without animating.
+     * @param in The new state
+     */
+    public void setStateInstantly(boolean in) {
+        this.state = in;
+
+        lastMillis = (long) (System.currentTimeMillis() - length.get() - 1);
+    }
+
+    /**
      * Gets the linear animation factor. This method ignores the <code>{@link Easing#ease(double)}</code> methods found in each
      * Easing element.
      * @return The animation factor without the given easing being applied
