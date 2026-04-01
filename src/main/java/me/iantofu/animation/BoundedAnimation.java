@@ -1,4 +1,4 @@
-package me.surge.animation;
+package me.iantofu.animation;
 
 import java.util.function.Supplier;
 

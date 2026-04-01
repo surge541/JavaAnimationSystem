@@ -1,4 +1,4 @@
-package me.surge.animation;
+package me.iantofu.animation;
 
 import java.util.function.Supplier;
 
@@ -32,7 +32,7 @@ public class Animation {
     public Animation(Supplier<Float> length, boolean initialState, Supplier<Easing> easing) {
         this.length = length;
         this.initialState = initialState;
-        setState(initialState);
+        setStateInstantly(initialState);
         this.easing = easing;
     }
 
@@ -80,7 +80,7 @@ public class Animation {
     public void resetToDefault() {
         state = initialState;
 
-        lastMillis = (long) (initialState ? System.currentTimeMillis() - ((1 - getLinearFactor()) * length.get()) : System.currentTimeMillis() - (getLinearFactor() * length.get()));
+        lastMillis = 0L;
     }
 
     /**
