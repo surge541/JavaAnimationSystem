@@ -62,6 +62,18 @@ public class Main {
 
             System.out.printf("R %d G %d B %d A %d%n", colour.getRed(), colour.getGreen(), colour.getBlue(), colour.getAlpha());
         }
+
+
+
+        // Set state instantly
+        System.out.println("SET STATE INSTANTLY");
+
+        Animation instant = new Animation(500f, false, () -> Easing.LINEAR);
+        System.out.println(instant.getAnimationFactor());
+        instant.setStateInstantly(true);
+        System.out.println(instant.getAnimationFactor());
+        instant.setStateInstantly(false);
+        System.out.println(instant.getAnimationFactor());
     }
 
 }

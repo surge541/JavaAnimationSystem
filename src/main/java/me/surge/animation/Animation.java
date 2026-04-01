@@ -107,8 +107,7 @@ public class Animation {
      */
     public void setStateInstantly(boolean in) {
         this.state = in;
-
-        lastMillis = (long) (System.currentTimeMillis() - length.get() - 1);
+        lastMillis = 0L;
     }
 
     /**
