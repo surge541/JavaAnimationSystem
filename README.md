@@ -10,7 +10,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.Wolfsurge:JavaAnimationSystem:1.1'
+    implementation 'com.github.surge541:JavaAnimationSystem:1.3'
 }
 ```
 
@@ -25,7 +25,7 @@ dependencies {
   
 <dependencies>
     <dependency>
-        <groupId>com.github.Wolfsurge</groupId>
+        <groupId>com.github.surge541</groupId>
         <artifactId>JavaAnimationSystem</artifactId>
         <version>1.1</version>
     </dependency>
