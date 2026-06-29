@@ -32,8 +32,9 @@ public class Animation {
     public Animation(Supplier<Float> length, boolean initialState, Supplier<Easing> easing) {
         this.length = length;
         this.initialState = initialState;
-        setStateInstantly(initialState);
         this.easing = easing;
+
+        setStateInstantly(initialState);
     }
 
     /**

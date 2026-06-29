@@ -178,6 +178,26 @@ public class AnimationTests {
     }
 
     @Test
+    public void easingExpoIn() throws InterruptedException {
+        Animation animation = new Animation(200f, false, Easing.EXPO_IN);
+        animation.setState(true);
+        Thread.sleep(100L);
+
+        double factor = animation.getAnimationFactor();
+        assertTrue(factor > 0 && factor <= 1);
+    }
+
+    @Test
+    public void easingExpoOut() throws InterruptedException {
+        Animation animation = new Animation(200f, false, Easing.EXPO_OUT);
+        animation.setState(true);
+        Thread.sleep(100L);
+
+        double factor = animation.getAnimationFactor();
+        assertTrue(factor > 0 && factor <= 1);
+    }
+
+    @Test
     public void easingCubicIn() throws InterruptedException {
         Animation animation = new Animation(200f, false, Easing.CUBIC_IN);
         animation.setState(true);
